@@ -3,6 +3,15 @@
 Proof of concept, built end to end in Terraform and tested in a disposable AWS account, then destroyed.
 It is written as it would be delivered to a client: request, analysis, decision, proposed solution, variants, evidence and lessons learned.
 
+**Architecture documentation**
+
+| Document | Purpose |
+|---|---|
+| [ADR-001 — Zero trust access for legacy apps](docs/adr/ADR-001-zero-trust-access-for-legacy-apps.md) | Main decision: AWS Verified Access (Accepted) |
+| [ADR-002 — Administrative access with Session Manager](docs/adr/ADR-002-administrative-access-session-manager.md) | Operator access to isolated servers (Proposed) |
+| [Technical debt register](docs/technical-debt-register.md) | Accepted gaps with owner, compensating controls and exit trigger |
+| [TOGAF / ITIL mapping](docs/governance.md) | Where each artifact sits in ADM phases and change management |
+
 ## 1. The request
 
 A set of internal web applications must stay available to employees, but they cannot be fixed:
